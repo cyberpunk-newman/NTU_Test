@@ -1,8 +1,0 @@
-7.1 a)
-
-# coordinate to index
-index = 4*x2 +x1
-
-#index to coordinate
-x2 = index mod 4
-x1 = index - 4*x2
