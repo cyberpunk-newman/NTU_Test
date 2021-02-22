@@ -1,0 +1,9 @@
+7.2 a)
+
+# coordinate to index
+index = 12*x3 + 4*x2 + x1
+
+#index to coordinate
+x3 = index mod 12
+x2 = (index - 12*x3) mod 4
+x1 = index - 12*x3 - 4*x2
