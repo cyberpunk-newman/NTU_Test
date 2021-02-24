@@ -1,0 +1,33 @@
+# Answer for 8.1
+# d[E]/dt = k2[ES]-k1[E][S]
+# d[S]/dt = k2[ES]-k1[E][S]
+# d[ES]/dt = k1[ES]-k2[ES]-k2[P][E]
+# d[P]/dt = k3[ES]
+
+# Answer for 8.2
+# I finish the code of fourth-order Runge-Kutta method but has no idea how to use it
+ 
+def func(x,y):
+    #f=
+    
+    return f
+
+#x0: initial x value, y0: initial y value, h: step size, N: iterative times
+def rk4(x0,y0,h,N):
+    n = 1
+    while(n != N):
+        x1 = x0 + h
+        k1 = func(x0, y0)
+        k2 = func(x0+h/2, y0+h*k1/2)
+        k3 = func(x0+h/2, y0+h*k2/2)
+        k4 = func(x1, y0+h*k3)
+        y1 = y0 + h * (k1 + 2* k2 + 2 * k3 + k4) / 6
+        print("%.2f, %.6f" %(x1, y1))
+        n = n + 1
+        x0 = x1
+        y0 = y1
+        
+rk4()
+
+# Sorry, I cannot figure out the answer for 8.3
+
