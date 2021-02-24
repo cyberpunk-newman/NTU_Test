@@ -1,8 +1,8 @@
 # Answer for 8.1
-# d[E]/dt = k2[ES]-k1[E][S]
-# d[S]/dt = k2[ES]-k1[E][S]
-# d[ES]/dt = k1[ES]-k2[ES]-k2[P][E]
-# d[P]/dt = k3[ES]
+d[E]/dt = k2[ES]-k1[E][S]
+d[S]/dt = k2[ES]-k1[E][S]
+d[ES]/dt = k1[ES]-k2[ES]-k2[P][E]
+d[P]/dt = k3[ES]
 
 # Answer for 8.2
 # I finish the code of fourth-order Runge-Kutta method but has no idea how to use it
